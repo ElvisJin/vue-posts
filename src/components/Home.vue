@@ -16,7 +16,7 @@
             </div>
             <div v-else>
               <div v-if="filteredPosts.length > 0">
-                <v-list-item v-for="post in filteredPosts" :key="post.id" @click="handlePostDetail(post)"
+                <v-list-item v-for="post in pagePosts" :key="post.id" @click="handlePostDetail(post)"
                   class="rounded-lg my-2 py-1 px-8" :style="{ cursor: 'pointer', border: 'solid 1px' }">
                   <v-list-item-content>
                     <v-list-item-title>{{ post.title }}</v-list-item-title>
